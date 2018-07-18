@@ -9,24 +9,23 @@ sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
+    mavenLocal()
 }
 
 compileJava.options.encoding = "UTF-8"
 
 jar {
-    from('C:\\\\Users\\\\i.kolpakov\\\\MyWork') {
-        include('lib/**')
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } } {
+        exclude "META-INF/*.SF"
+        exclude "META-INF/*.DSA"
+        exclude "META-INF/*.RSA"
     }
 }
 
 dependencies {
 
-    // https://mvnrepository.com/artifact/net.sf.jasperreports/jasperreports
-//    compile group: 'net.sf.jasperreports', name: 'jasperreports', version: '6.6.0'
-
-    // https://mvnrepository.com/artifact/com.lowagie/itext
-//    compile group: 'com.lowagie', name: 'itext', version: '2.1.7'
-
-    compile fileTree(dir: 'C:\\Users\\i.kolpakov\\MyWork\\lib', include: '*.jar')
+    compile group: 'net.sf.jasperreports', name: 'jasperreports', version: '6.6.0'
+    compile group: 'com.lowagie', name: 'itext', version: '2.1.7'
+    compile group: 'com.gk-software.se-platform', name: 'tbi', version: '21.07.00'
 
 }

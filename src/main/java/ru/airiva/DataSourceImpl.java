@@ -1,7 +1,6 @@
 package ru.airiva;
 
 import net.sf.jasperreports.engine.JRDataSource;
-import net.sf.jasperreports.engine.JRException;
 import net.sf.jasperreports.engine.JRField;
 
 import java.util.HashMap;
@@ -27,13 +26,13 @@ public class DataSourceImpl implements JRDataSource {
     private static final String IS_PROMO = "isPromo";
 
     private DataSourceImpl() {
-        fields.put(BRAND_LOGO, new ImageWrapper("C:\\Users\\i.kolpakov\\MyWork\\tasks\\100688\\img\\logo.jpg"));
+        fields.put(BRAND_LOGO, new ImageWrapper("logo.jpg"));
         fields.put(TEXT_1, "Икра Кабачковая 400г");
         fields.put(TEXT_2, "В жестяной банке");
         fields.put(TEXT_3, "");
         fields.put(TEXT_4, "");
-        fields.put(PRICE, new Double(19999.95d));
-        fields.put(NORMAL_PRICE, new Double(59999.99d));
+        fields.put(PRICE, 19999.95d);
+        fields.put(NORMAL_PRICE, 59999.99d);
         fields.put(EAN, "4813445000650");
         fields.put(MANUFACTURER, "КФ Ударница");
         fields.put(MAIN_ITEM_ID, "10795");
@@ -42,12 +41,12 @@ public class DataSourceImpl implements JRDataSource {
     }
 
     @Override
-    public boolean next() throws JRException {
+    public boolean next() {
         return !fields.isEmpty();
     }
 
     @Override
-    public Object getFieldValue(JRField jrField) throws JRException {
+    public Object getFieldValue(JRField jrField) {
 
         String name = jrField.getName();
         Object o = null;
