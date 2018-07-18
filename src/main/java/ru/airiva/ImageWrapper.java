@@ -1,14 +1,17 @@
 package ru.airiva;
 
+import gk.tbi.TbiBlob;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.io.InputStream;
 
 /**
  * @author Ivan
  */
-public class ImageWrapper {
+public class ImageWrapper implements TbiBlob {
 
     private InputStream image;
 
@@ -20,7 +23,13 @@ public class ImageWrapper {
         }
     }
 
-    public InputStream getImage() {
+    @Override
+    public InputStream getInputStream() throws IOException {
         return image;
+    }
+
+    @Override
+    public int getLength() throws IOException {
+        return 0;
     }
 }

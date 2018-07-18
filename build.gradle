@@ -11,12 +11,22 @@ repositories {
     mavenCentral()
 }
 
+compileJava.options.encoding = "UTF-8"
+
+jar {
+    from('C:\\\\Users\\\\i.kolpakov\\\\MyWork') {
+        include('lib/**')
+    }
+}
+
 dependencies {
 
     // https://mvnrepository.com/artifact/net.sf.jasperreports/jasperreports
-    compile group: 'net.sf.jasperreports', name: 'jasperreports', version: '6.6.0'
+//    compile group: 'net.sf.jasperreports', name: 'jasperreports', version: '6.6.0'
 
     // https://mvnrepository.com/artifact/com.lowagie/itext
-    compile group: 'com.lowagie', name: 'itext', version: '2.1.7'
+//    compile group: 'com.lowagie', name: 'itext', version: '2.1.7'
+
+    compile fileTree(dir: 'C:\\Users\\i.kolpakov\\MyWork\\lib', include: '*.jar')
 
 }
