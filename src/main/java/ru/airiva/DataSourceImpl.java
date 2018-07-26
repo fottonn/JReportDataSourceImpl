@@ -24,6 +24,7 @@ public class DataSourceImpl implements JRDataSource {
     private static final String MAIN_ITEM_ID = "mainItemId";
     private static final String IS_TPC = "isTpc";
     private static final String IS_PROMO = "isPromo";
+    private static final String PROMO_PRICE = "promoPrice";
 
     private DataSourceImpl() {
         fields.put(BRAND_LOGO, new ImageWrapper("logo.jpg"));
@@ -33,6 +34,7 @@ public class DataSourceImpl implements JRDataSource {
         fields.put(TEXT_4, "");
         fields.put(PRICE, 19999.95d);
         fields.put(NORMAL_PRICE, 59999.99d);
+        fields.put(PROMO_PRICE, 399.88d);
         fields.put(EAN, "4813445000650");
         fields.put(MANUFACTURER, "КФ Ударница");
         fields.put(MAIN_ITEM_ID, "10795");
