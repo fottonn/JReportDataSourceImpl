@@ -25,6 +25,11 @@ public class DataSourceImpl implements JRDataSource {
     private static final String IS_TPC = "isTpc";
     private static final String IS_PROMO = "isPromo";
     private static final String PROMO_PRICE = "promoPrice";
+    private static final String WEIGHT_TYPE_BUTTON = "weightTypeButton";
+    private static final String WEIGHT_PRICE = "weightPrice";
+    private static final String WEIGHT_PROMO_PRICE = "weightPromoPrice";
+    private static final String WEIGHT_NORMAL_PRICE = "weightNormalPrice";
+    private static final String EAN_CONTENT = "eanContent";
 
     private DataSourceImpl() {
         fields.put(BRAND_LOGO, new ImageWrapper("logo.jpg"));
@@ -40,23 +45,27 @@ public class DataSourceImpl implements JRDataSource {
         fields.put(MAIN_ITEM_ID, "10795");
         fields.put(IS_TPC, Boolean.TRUE);
         fields.put(IS_PROMO, Boolean.TRUE);
+        fields.put(WEIGHT_TYPE_BUTTON, "999");
+        fields.put(WEIGHT_PRICE, "3333.56");
+        fields.put(WEIGHT_PROMO_PRICE, "4444.66");
+        fields.put(WEIGHT_NORMAL_PRICE, "8888.44");
+        fields.put(EAN_CONTENT, "%0001079519999950");
     }
+
+    private int counter = -1;
 
     @Override
     public boolean next() {
-        return !fields.isEmpty();
+        if (counter < 0) {
+            counter++;
+            return true;
+        }
+        return false;
     }
 
     @Override
     public Object getFieldValue(JRField jrField) {
-
-        String name = jrField.getName();
-        Object o = null;
-        if (fields.containsKey(name)) {
-            o = fields.get(name);
-            fields.remove(name);
-        }
-        return o;
+        return fields != null ? fields.get(jrField.getName()) : null;
     }
 
     public static JRDataSource createDatasource() {
