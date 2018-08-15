@@ -4,6 +4,10 @@
 		<normal><![CDATA[fonts/XRGLabelFranklinMedium80/XRGLabelFranklinMedium80.ttf]]></normal>
 		<exportFonts/>
 	</fontFamily>
+	<fontFamily name="XRG Label Franklin Medium 60">
+		<normal><![CDATA[fonts/XRGLabelFranklinMedium60/XRGLabelFranklinMedium60.ttf]]></normal>
+		<exportFonts/>
+	</fontFamily>
 	<fontFamily name="XRG Label Rounded MT Bold 61">
 		<normal><![CDATA[fonts/XRGLabelRoundedMTBold61/XRGLabelRoundedMTBold61.ttf]]></normal>
 		<exportFonts/>
