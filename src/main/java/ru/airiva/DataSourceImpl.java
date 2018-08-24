@@ -45,14 +45,15 @@ public class DataSourceImpl implements JRDataSource {
     private static final String DISCOUNT_VALUE = "discountValue";
     private static final String SPECIAL_PRICE = "specialPrice";
     private static final String PACK_PRICE = "packPrice";
+    private static final String REPORT_IMAGE_ROOT_DIR = "REPORT_IMAGE_ROOT_DIR";
 
     private DataSourceImpl() {
         fields.put(BRAND_LOGO, new ImageWrapper("logo.jpg"));
-        fields.put(TEXT_1, "Икра Кабачковая 400г");
-        fields.put(TEXT_2, "В жестяной банке");
+        fields.put(TEXT_1, "оооооооооО ооооооооО ооооооооОо");
+        fields.put(TEXT_2, "оооооооооО ооооооооО ооооооооОо");
         fields.put(TEXT_3, "");
         fields.put(TEXT_4, "");
-        fields.put(PRICE, 19999.95d);
+        fields.put(PRICE, 89999.95d);
         fields.put(NORMAL_PRICE, 59999.99d);
         fields.put(PROMO_PRICE, 19999.88d);
         fields.put(EAN, "4813445000650");

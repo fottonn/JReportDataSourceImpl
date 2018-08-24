@@ -1,23 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <fontFamilies>
 	<fontFamily name="XRG Label Franklin Medium 80">
-		<normal><![CDATA[fonts/XRGLabelFranklinMedium80/XRGLabelFranklinMedium80.ttf]]></normal>
+		<normal><![CDATA[fonts/XRGLabelFranklinMedium80.ttf]]></normal>
+		<exportFonts/>
+	</fontFamily>
+	<fontFamily name="XRG Label Franklin Medium 65">
+		<normal><![CDATA[fonts/XRGLabelFranklinMedium65.ttf]]></normal>
+		<exportFonts/>
+	</fontFamily>
+	<fontFamily name="XRG Label Franklin Medium 50">
+		<normal><![CDATA[fonts/XRGLabelFranklinMedium50.ttf]]></normal>
 		<exportFonts/>
 	</fontFamily>
 	<fontFamily name="XRG Label Franklin Medium 60">
-		<normal><![CDATA[fonts/XRGLabelFranklinMedium60/XRGLabelFranklinMedium60.ttf]]></normal>
+		<normal><![CDATA[fonts/XRGLabelFranklinMedium60.ttf]]></normal>
 		<exportFonts/>
 	</fontFamily>
 	<fontFamily name="XRG Label Rounded MT Bold 61">
-		<normal><![CDATA[fonts/XRGLabelRoundedMTBold61/XRGLabelRoundedMTBold61.ttf]]></normal>
+		<normal><![CDATA[fonts/XRGLabelRoundedMTBold61.ttf]]></normal>
 		<exportFonts/>
 	</fontFamily>
 	<fontFamily name="XRG Label Rounded MT Bold 70">
-		<normal><![CDATA[fonts/XRGLabelRoundedMTBold70/XRGLabelRoundedMTBold70.ttf]]></normal>
+		<normal><![CDATA[fonts/XRGLabelRoundedMTBold70.ttf]]></normal>
 		<exportFonts/>
 	</fontFamily>
 	<fontFamily name="XRG Label Rounded MT Bold 80">
-		<normal><![CDATA[fonts/XRGLabelRoundedMTBold80/XRGLabelRoundedMTBold80.ttf]]></normal>
+		<normal><![CDATA[fonts/XRGLabelRoundedMTBold80.ttf]]></normal>
+		<exportFonts/>
+	</fontFamily>
+	<fontFamily name="XRG Label Rounded MT Bold">
+		<normal><![CDATA[fonts/XRGLabelRoundedMTBold.ttf]]></normal>
+		<exportFonts/>
+	</fontFamily>
+	<fontFamily name="XRG Label Franklin Book 70">
+		<normal><![CDATA[fonts/XRGLabelFranklinBook70.ttf]]></normal>
 		<exportFonts/>
 	</fontFamily>
 </fontFamilies>
