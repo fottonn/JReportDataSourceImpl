@@ -36,16 +36,16 @@
 		<normal><![CDATA[fonts/XRGLabelFranklinBook70.ttf]]></normal>
 		<exportFonts/>
 	</fontFamily>
-	<fontFamily name="Circe Bold 65">
-		<normal><![CDATA[fonts/CirceBold65.ttf]]></normal>
+	<fontFamily name="Circe Bold">
+		<normal><![CDATA[fonts/CirceBold.ttf]]></normal>
 		<exportFonts/>
 	</fontFamily>
-	<fontFamily name="Circe Extra Bold 75">
+	<fontFamily name="Circe Extra Bold">
 		<normal><![CDATA[fonts/CarouselRegular.ttf]]></normal>
 		<exportFonts/>
 	</fontFamily>
-	<fontFamily name="Circe Regular 55">
-		<normal><![CDATA[fonts/CirceRegular55.ttf]]></normal>
+	<fontFamily name="Circe Regular">
+		<normal><![CDATA[fonts/CirceRegular.ttf]]></normal>
 		<exportFonts/>
 	</fontFamily>
 	<fontFamily name="Carousel Regular">

@@ -93,7 +93,7 @@ public class DataSourceImpl implements JRDataSource {
         fields.put(ASSORTMENT, "#");
         fields.put(SUPPLIER_INFO, "*");
         fields.put(MARKETABILITY, "oooo");
-        fields.put(ADDITIONAL_ANALYTICS, "1КГ = 4444,99");
+        fields.put(ADDITIONAL_ANALYTICS, "1КГ = 4444.99");
         fields.put(PROMO_PRICE_PERIOD, "12.09.2017");
     }
 
