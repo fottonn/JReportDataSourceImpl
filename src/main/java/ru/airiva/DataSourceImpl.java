@@ -46,6 +46,13 @@ public class DataSourceImpl implements JRDataSource {
     private static final String SPECIAL_PRICE = "specialPrice";
     private static final String PACK_PRICE = "packPrice";
     private static final String REPORT_IMAGE_ROOT_DIR = "REPORT_IMAGE_ROOT_DIR";
+    private static final String PRICE_EXPIRATION_DATE = "priceExpirationDate";
+    private static final String MARKETABILITY = "marketability"; // продаваемость
+    private static final String OSNOV = "osnov"; // признак osnov
+    private static final String ASSORTMENT = "assortment"; // принадлежность ассортименту к магазину
+    private static final String SUPPLIER_INFO = "supplierInfo"; // признак поставщика РLI
+    private static final String ADDITIONAL_ANALYTICS = "additionalAnalytics"; // Доп. аналитика
+    private static final String PROMO_PRICE_PERIOD = "promoPricePeriod"; // Период акции
 
     private DataSourceImpl() {
         fields.put(BRAND_LOGO, new ImageWrapper("logo.jpg"));
@@ -81,6 +88,13 @@ public class DataSourceImpl implements JRDataSource {
         fields.put(BASE_QTY, 10);
         fields.put(SPECIAL_PRICE, "899.99");
         fields.put(PACK_PRICE, "8990.00");
+        fields.put(PRICE_EXPIRATION_DATE, "12.10.17");
+        fields.put(OSNOV, "K");
+        fields.put(ASSORTMENT, "#");
+        fields.put(SUPPLIER_INFO, "*");
+        fields.put(MARKETABILITY, "oooo");
+        fields.put(ADDITIONAL_ANALYTICS, "1КГ = 4444,99");
+        fields.put(PROMO_PRICE_PERIOD, "12.09.2017");
     }
 
     private int counter = -1;
